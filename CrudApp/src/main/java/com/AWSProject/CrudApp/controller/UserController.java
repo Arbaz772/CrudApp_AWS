@@ -26,6 +26,12 @@ public class UserController {
 	private UserRepository userRepository;
 	
 	
+	
+	//app running check
+	@GetMapping("/run")
+	public String hello(){
+		return "App is Running";
+	}
 	//get all users API
 	@GetMapping
 	public List<User> getAllUsers(){
